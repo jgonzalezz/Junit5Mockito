@@ -39,33 +39,47 @@ class CalculatorTest {
     restar(int a, int b)            |a = 10, b=20       |-10
      */
 
-    @BeforeAll
+
+    /*
+    * Etiquetas
+    *
+    * @Test : se indica a junit que se trata de un metodo test
+    * @
+    * @
+    * @
+    * @
+    * @
+    * */
+
+    @BeforeAll //se ejecuta SOLO una vez al principio      //Ej.  inicializar bases de datos debe ser STATIC
     public static void beforeAllTests(){
         calculatorStatic = new Calculator();
         System.out.println("@BeforeAll -> beforeAllTests()");
     }
 
-    @BeforeEach
+    @BeforeEach    //Se ejecuta siempre antes de cada uno de los metodos @Test  // iniciar variables e instaciar objetos
     public void setUp(){
         calculator = new Calculator();
         System.out.println("@BeforeEach -> setUp()");
     }
 
-    @AfterEach
+    @AfterEach //Se ejecuta siempre despues de cada uno de los metodos @Test // metodo de limpieza y liberar recursos
     public void tearDown(){
         calculator = null;
         System.out.println("@AfterEach -> tearDown()");
     }
 
-    @AfterAll
+    @AfterAll //se ejecuta solo una vez al final //DEBE SER STATIC liber recursos inicalizados en el before all
     public static void afterAllTests(){
         calculatorStatic = null;
         System.out.println("@AfterAll -> afterAllTests()");
     }
 
+
+
     @Test
     public void calculatorNotNullTest(){
-        assertNotNull(calculatorStatic, "Calculator debe ser not null");
+        assertNotNull(calculatorStatic, "Calculator debe ser not null"); //El mensaje solo sale cuando falla el test
         assertNotNull(calculator, "Calculator debe ser not null");
         System.out.println("@Test -> calculatorNotNullTest()");
     }
@@ -93,13 +107,16 @@ class CalculatorTest {
         System.out.println("@Test -> addAssertTest()");
     }
 
-    @Test
+    @Test// TEst optimizado
     public void addTest(){
         assertEquals(30, calculator.add(10,20));
     }
 
+
     @Test
-    public void assertTypesTest(){
+    public void assertTypesTest(){  //Diferentes assert
+
+
         assertTrue(1 == 1);
         //assertTrue(1 == 2);
 
@@ -108,52 +125,56 @@ class CalculatorTest {
 
         Calculator calculator1 = new Calculator();
         Calculator calculator2 = new Calculator();
-        Calculator calculator3 = calculator1;
+        Calculator calculator3 = calculator1;   //Apuntan a la misma direccion de memoria son el mismo
 
-        assertSame(calculator1, calculator3);
-       // assertSame(calculator1, calculator2);
+        //Comprobar si son el mismo objeto
+        assertSame(calculator1, calculator3); //True
+       // assertSame(calculator1, calculator2); //Fase
 
-        assertNotSame(calculator1, calculator2);
-        //assertNotSame(calculator1, calculator3);
+        assertNotSame(calculator1, calculator2);//True
+        //assertNotSame(calculator1, calculator3);//false
+
 
         assertEquals("alberto", "alberto");
        // assertEquals("alberto", "albert", "Ha fallado nuestro metodo String");
 
-        assertEquals(1, 1.4, 0.5);
-       // assertEquals(1, 1.6, 0.5);
+        assertEquals(1, 1.4, 0.5); //Delta 0.5 rango aceptable entre el intervalo 1 y 1.4  true
+       // assertEquals(1, 1.6, 0.5); //false
     }
 
+    //Ejemplos como nombrar los TEST estandar
     @Test
     public void add_ValidInput_ValidExpected_Test(){
         assertEquals(11, calculator.add(7,4));
     }
-
     @Test
     public void subtract_ValidInput_ValidExpected_Test(){
         assertEquals(11, calculator.subtract(15,4));
     }
-
     @Test
     public void subtract_ValidInput_ValidNegativeResultExpected_Test(){
         assertEquals(-10, calculator.subtract(10,20));
     }
 
+
     @Test
     public void divide_ValidInput_ValidResultExpected_Test(){
         assertEquals(2, calculator.divide(10,5));
     }
-
     @Test
     public void divide_InValidInput_Test(){
         fail("Fallo detectado manualmente - No se puede dividir por cero");
         calculator.divide(10,0);
     }
 
+    //Assert exception assertThrows
     @Test
     public void divide_InValidInput_ExpectedException_Test(){
-        assertThrows(ArithmeticException.class, ()->calculator.divideByZero(2,0), "No se puede dividir por cero");
+        assertThrows(ArithmeticException.class, () -> calculator.divideByZero(2,0), "No se puede dividir por cero");
     }
 
+
+    //Se deshabilita el test para que no se corra y se agrega un comentario con el motivo
     @Disabled("Disabled until bug 23 be resolved")
     @Test
     public void divide_InvalidInput_Test(){
@@ -161,25 +182,27 @@ class CalculatorTest {
     }
 
     @Test
-    @DisplayName("Metodo Dividir -> Funciona")
+    @DisplayName("Metodo Dividir -> Funciona") //Texto para identificar el test
     public void divide_ValidInput_ValidResultExpected_Name_Test(){
         assertEquals(2, calculator.divide(10,5));
     }
 
+    //SI un accert falla se ejecutan kis demas de esta manera// la recomendacion es tener un solo accert por metodo
     @Test
     public void add_Assert_All_Test(){
         assertAll(
                 ()-> assertEquals(31, calculator.add(11,20)),
-                ()-> assertEquals(20, calculator.add(10,20)),
+                ()-> assertEquals(30, calculator.add(10,20)),
                 ()-> assertEquals(2, calculator.add(1,1))
         );
     }
 
+    //Varios test con diferentes respuestas o parametros de un mismo metodo para organizarlos en una subclase
     @Nested
     class AddTest{
         @Test
         public void add_Positive_Test(){
-            assertEquals(30, calculator.add(15,15));
+            assertEquals(30, calculator.add(16,15));
         }
 
         @Test
@@ -192,6 +215,13 @@ class CalculatorTest {
             assertEquals(0, calculator.add(0,0));
         }
     }
+
+
+
+    //Prueba parametrizada
+    //los datos se pueden obtener de una fuente de dato o quemados
+    //Ejecutar la misma una y otra vez con diferentes valores
+    //Se debe agregar la dependencia junit-jupiter-params
 
     /*
     Ejemplo en nuestra división queremos hacer 5 pruebas
@@ -207,7 +237,6 @@ class CalculatorTest {
     dividir(int a, int b)           |a = -6, b=-2       |3
     dividir(int a, int b)           |a = -6, b=0        |Excepción
      */
-
     @ParameterizedTest(name = "{index} => a={0}, b={1}, sum={2}")
     @MethodSource("addProviderData")
     public void addParameterizedTest(int a, int b, int sum){
@@ -216,7 +245,7 @@ class CalculatorTest {
 
     private static Stream<Arguments> addProviderData(){
         return Stream.of(
-                Arguments.of(6,2,8),
+                Arguments.of(6,2,8), //(a,b,sum)
                 Arguments.of(-6,-2,-10),
                 Arguments.of(6,-2,4),
                 Arguments.of(-6,2,-4),
@@ -224,6 +253,8 @@ class CalculatorTest {
         );
     }
 
+
+    //Detener el test cuando tarda mucho la ejecucion del metodo
     @Test
     public void timeOut_Test(){
         assertTimeout(Duration.ofMillis(2000), () ->{

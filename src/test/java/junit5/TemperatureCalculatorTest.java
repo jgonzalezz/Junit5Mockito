@@ -25,6 +25,7 @@ class TemperatureCalculatorTest {
     @Test
     public void toFahrenheitTest(){
         assertEquals(-9.4, temperatureCalculator.toFahrenheit(-23), 0.01);
+        System.out.println("@Test -> toFahrenheitTest()");
     }
 
 }

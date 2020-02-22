@@ -2,17 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="946b51d8-e317-4e4b-970b-64adae5ffc23" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mockito/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mockito/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/mockito/LoginTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mockito/LoginTest$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/mockito/LoginTest$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mockito/LoginTest$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/mockito/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mockito/LoginTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/junit5/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/junit5/CalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/junit5/TemperatureCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/junit5/TemperatureCalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/junit5/Calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/junit5/Calculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mockito/AddTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mockito/AddTest.class" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -25,12 +29,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
   <component name="ProjectId" id="1ReuJYsckJbn4qOj73GjbEC8QFi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
   <component name="RecentsManager">
@@ -42,19 +58,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="JUnit.LoginTest.doLoginCaptorTest">
+  <component name="RunManager" selected="JUnit.TemperatureCalculatorTest">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -67,83 +71,75 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in UnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UnitTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UnitTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mockito.*" />
+          <option name="PATTERN" value="junit5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="mockito" />
-      <option name="MAIN_CLASS_NAME" value="mockito.LoginTest" />
+      <option name="PACKAGE_NAME" value="junit5" />
+      <option name="MAIN_CLASS_NAME" value="junit5.CalculatorTest" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.doLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CalculatorTest.addParameterizedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UnitTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mockito.*" />
+          <option name="PATTERN" value="junit5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="mockito" />
-      <option name="MAIN_CLASS_NAME" value="mockito.LoginTest" />
-      <option name="METHOD_NAME" value="doLogin" />
+      <option name="PACKAGE_NAME" value="junit5" />
+      <option name="MAIN_CLASS_NAME" value="junit5.CalculatorTest" />
+      <option name="METHOD_NAME" value="addParameterizedTest(int,int,int)" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.doLoginCaptorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TemperatureCalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UnitTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mockito.*" />
+          <option name="PATTERN" value="junit5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="mockito" />
-      <option name="MAIN_CLASS_NAME" value="mockito.LoginTest" />
-      <option name="METHOD_NAME" value="doLoginCaptorTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WebServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="UnitTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mockito.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="mockito" />
-      <option name="MAIN_CLASS_NAME" value="mockito.WebServiceTest" />
+      <option name="PACKAGE_NAME" value="junit5" />
+      <option name="MAIN_CLASS_NAME" value="junit5.TemperatureCalculatorTest" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebServiceTest.loginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TemperatureCalculatorTest.toFahrenheitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UnitTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mockito.*" />
+          <option name="PATTERN" value="junit5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="mockito" />
-      <option name="MAIN_CLASS_NAME" value="mockito.WebServiceTest" />
-      <option name="METHOD_NAME" value="loginTest" />
+      <option name="PACKAGE_NAME" value="junit5" />
+      <option name="MAIN_CLASS_NAME" value="junit5.TemperatureCalculatorTest" />
+      <option name="METHOD_NAME" value="toFahrenheitTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -210,19 +206,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.WebServiceTest" />
-      <item itemvalue="JUnit.WebServiceTest.loginTest" />
-      <item itemvalue="JUnit.LoginTest.doLogin" />
-      <item itemvalue="JUnit.LoginTest" />
-      <item itemvalue="JUnit.LoginTest.doLoginCaptorTest" />
+      <item itemvalue="JUnit.All in UnitTest" />
+      <item itemvalue="JUnit.CalculatorTest.addParameterizedTest" />
+      <item itemvalue="JUnit.CalculatorTest" />
+      <item itemvalue="JUnit.TemperatureCalculatorTest.toFahrenheitTest" />
+      <item itemvalue="JUnit.TemperatureCalculatorTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LoginTest.doLoginCaptorTest" />
-        <item itemvalue="JUnit.LoginTest" />
-        <item itemvalue="JUnit.LoginTest.doLogin" />
-        <item itemvalue="JUnit.WebServiceTest" />
-        <item itemvalue="JUnit.WebServiceTest.loginTest" />
+        <item itemvalue="JUnit.TemperatureCalculatorTest" />
+        <item itemvalue="JUnit.TemperatureCalculatorTest.toFahrenheitTest" />
+        <item itemvalue="JUnit.CalculatorTest" />
+        <item itemvalue="JUnit.All in UnitTest" />
+        <item itemvalue="JUnit.CalculatorTest.addParameterizedTest" />
       </list>
     </recent_temporary>
   </component>
@@ -236,19 +232,71 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570035732638</updated>
+      <workItem from="1582311459419" duration="7431000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1582311648501">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/-1920.7.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582311648501" />
+    <state x="808" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1582311574767">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="808" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/-1920.7.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582311574767" />
+    <state width="377" height="466" key="DebuggerActiveHint" timestamp="1582311663443">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="377" height="466" key="DebuggerActiveHint/-1920.7.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582311663443" />
+    <state width="1877" height="307" key="GridCell.Tab.0.bottom" timestamp="1582318907286">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="307" key="GridCell.Tab.0.bottom/-1920.7.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582318907286" />
+    <state width="1877" height="307" key="GridCell.Tab.0.center" timestamp="1582318907286">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="307" key="GridCell.Tab.0.center/-1920.7.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582318907286" />
+    <state width="1877" height="307" key="GridCell.Tab.0.left" timestamp="1582318907286">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="307" key="GridCell.Tab.0.left/-1920.7.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582318907286" />
+    <state width="1877" height="307" key="GridCell.Tab.0.right" timestamp="1582318907286">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="307" key="GridCell.Tab.0.right/-1920.7.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582318907286" />
+    <state width="1877" height="121" key="GridCell.Tab.1.bottom" timestamp="1582311743700">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="121" key="GridCell.Tab.1.bottom/-1920.7.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582311743700" />
+    <state width="1877" height="121" key="GridCell.Tab.1.center" timestamp="1582311743700">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="121" key="GridCell.Tab.1.center/-1920.7.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582311743700" />
+    <state width="1877" height="121" key="GridCell.Tab.1.left" timestamp="1582311743700">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="121" key="GridCell.Tab.1.left/-1920.7.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582311743700" />
+    <state width="1877" height="121" key="GridCell.Tab.1.right" timestamp="1582311743700">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="121" key="GridCell.Tab.1.right/-1920.7.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1582311743700" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
