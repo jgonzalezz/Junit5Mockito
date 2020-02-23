@@ -2,6 +2,7 @@ package mockito;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
@@ -10,13 +11,13 @@ import static org.mockito.Mockito.verify;
 
 class WebServiceTest {
 
+    @InjectMocks
     private WebService webService;
     @Mock
     private Callback callback;
 
     @BeforeEach
     public void setUp(){
-        webService = new WebService();
         MockitoAnnotations.initMocks(this);
     }
 

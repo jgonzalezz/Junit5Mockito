@@ -11,14 +11,15 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AddCreateMock2Test {
 
-    @InjectMocks
+    @InjectMocks //En Add se injectan los @Mock
     private Add add;
+
     @Mock
     private ValidNumber validNumber;
 
     @BeforeEach
     public void setUp(){
-        MockitoAnnotations.initMocks(this);
+        MockitoAnnotations.initMocks(this); //Inicializacion de los mocks
     }
 
     @Test

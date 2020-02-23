@@ -4,9 +4,12 @@ public class ValidNumber {
 
     public ValidNumber(){};
 
+    /*
+    * Metodo para validar si lo que llega es un entero y que sea de 1 a 0 y no negativo
+    */
     public boolean check(Object o){
         if(o instanceof Integer){
-            if((Integer)o <10 && (Integer)o>=0){
+            if((Integer)o < 10 && (Integer)o >= 0){
                 return true;
             }else{
                 return false;
@@ -16,9 +19,10 @@ public class ValidNumber {
         }
     }
 
+
     public boolean checkZero(Object o){
         if(o instanceof Integer){
-            if((Integer)o==0){
+            if((Integer)o == 0){
                 throw new ArithmeticException("No podemos aceptar cero");
             }else{
                 return true;

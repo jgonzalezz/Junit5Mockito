@@ -13,7 +13,7 @@ class AddCreateMock1Test {
 
     @BeforeEach
     public void setUp(){
-        validNumber = Mockito.mock(ValidNumber.class);
+        validNumber = Mockito.mock(ValidNumber.class); //Mockeando validNumber para el constructor de la clase Add
         add = new Add(validNumber);
     }
 
@@ -21,7 +21,7 @@ class AddCreateMock1Test {
     public void addTest(){
         add.add(3,2);
         Mockito.verify(validNumber).check(3);
-        Mockito.verify(validNumber).check(5);
+        //Mockito.verify(validNumber).check(2); //Sale error porque los mock no son reales el comportamientose debe configurar
     }
 
 }

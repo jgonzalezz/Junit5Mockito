@@ -1,0 +1,35 @@
+
+R
+"src/test/java/mockito/AddTest.java,1\e\1e3c81f241bf4f1e66e9ca3350251fcd1b7cd205
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+_
+/src/main/java/junit5/TemperatureCalculator.java,6\7\67b9926d57fa9d72f0bafbc3ddca3dcfb4327aea
+c
+3src/test/java/junit5/TemperatureCalculatorTest.java,8\5\85a99a14842e7f03775fe1befd8f12f7b31014c7
+T
+$src/main/java/junit5/Calculator.java,5\c\5c9a12eba06bdd51d4ac2dfce6fb361430b7f884
+X
+(src/test/java/junit5/CalculatorTest.java,0\3\0346b80edbcbaa63d8a80816a3303a3b0570838b
+V
+&src/main/java/mockito/ValidNumber.java,3\f\3f003ca2cbc58e802facaefecc996402b43bfa4b
+Z
+*src/test/java/mockito/ValidNumberTest.java,6\6\66fb570de050c2d5ddc3e0efa8d2f75e05594abc
+]
+-src/test/java/mockito/AddCreateMock1Test.java,c\7\c7c79f5935a452e00c737ff59951471caf56c1df
+]
+-src/test/java/mockito/AddCreateMock2Test.java,2\1\2174c20061e90cddb289e7d4c620b3b346d8b02a
+P
+ src/main/java/mockito/Print.java,8\5\85497e2ebd21110402d21452dfed4121092532f0
+N
+src/main/java/mockito/Add.java,e\0\e0fe49cf587123b380a2bd351ce190495e841cfa
+Y
+)src/test/java/mockito/WebServiceTest.java,6\1\615696b55f3a78226d80089b02ef61f9bfb5e4e3
+U
+%src/main/java/mockito/WebService.java,a\0\a0fd9e97fbd246eaaeda30232cfc3b4721f90811
+S
+#src/main/java/mockito/Callback.java,b\a\ba1807e8d4e7837d5c2c1f13517c7dfbbe7d9d3c
+P
+ src/main/java/mockito/Login.java,4\6\46e5e401fa17c25f2a2a6ecc8845bd7b031cd5a5
+T
+$src/test/java/mockito/LoginTest.java,c\0\c03c79820ce282c8a5ae3e20bbf6529e1acfb09b
